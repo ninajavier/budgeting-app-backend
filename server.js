@@ -1,11 +1,9 @@
-import React from 'react';
+const app = require("./app");
 
-function server(props) {
-    return (
-        <div>
-            
-        </div>
-    );
-}
+require("dotenv").config();
+const PORT = process.env.PORT;
 
-export default server;
+
+app.listen(PORT, () => {
+    console.log(`Listening on port: ${PORT}`)
+})
