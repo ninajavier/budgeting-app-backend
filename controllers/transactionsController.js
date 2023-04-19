@@ -2,7 +2,7 @@ const express = require('express');
 const transactions = express.Router();
 const transactionsArray = require("../models/transaction.js");
 
-// get all
+// get all transactions 
 transactions.get("/", (req, res) => {
     res.status(202).json(transactionsArray);
 });
@@ -12,7 +12,7 @@ transactions.get('/:id', (req, res) => {
     const { id } = req.params;
     const transactions = transactionsArray[id];
     if (transactions) {
-        res.status(202).json(logsArray[id]);
+        res.status(202).json(transactionsArray[id]);
     } else {
         res.redirect(404);
     }

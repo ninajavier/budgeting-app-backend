@@ -1,34 +1,42 @@
 module.exports = [
     {
-        id: 1,
-        item_name: 'income',
-        from: 'employer',
-        category: 'income',
+        item_name: 'Income',
+        from: 'Employer',
+        category: 'Income',
         amount: 1000,
+        type: 'deposit',
         date: "2023-04-12"
     },
     {
-        id: 2,
-        item_name: 'cat food',
-        from: 'pet store',
-        category: 'pets',
+        item_name: 'Cat Food',
+        from: 'PetSmart',
+        category: 'Pets',
         amount: 30,
+        type: 'withdrawal',
         date: "2023-04-13"
     },
     {
-        id: 3,
-        item_name: 'groceries',
-        from: 'grocery store',
-        category: 'food',
+        item_name: 'Groceries',
+        from: 'ALDI',
+        category: 'Food',
         amount: 200,
+        type: 'withdrawal',
         date: "2023-04-14"
     },
     {
-        id: 4,
-        item_name: 'car tune up',
+        item_name: 'Car Tune Up',
         from: 'Meineke',
-        category: 'auto',
+        category: 'Auto',
         amount: 300,
+        type: 'withdrawal',
+        date: "2023-04-15"
+    },
+    {
+        item_name: 'ATM Deposit',
+        from: 'Bank',
+        category: 'Income',
+        amount: 250,
+        type: 'deposit',
         date: "2023-04-15"
     }
 ]
